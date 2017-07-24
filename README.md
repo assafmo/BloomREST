@@ -1,5 +1,5 @@
-Bloom Filters over REST HTTP server for remote access.  
-This probably should not be exposed to end users. :-)  
+Bloom Filters over REST API for remote access.  
+This probably should not be exposed to end users. :-)  
 
 # Usage
 ```bash
