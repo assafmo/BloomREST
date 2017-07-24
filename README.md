@@ -1,4 +1,4 @@
-Bloom Filters over HTTP for remote access.  
+Bloom Filters over REST HTTP server for remote access.  
 This probably should not be exposed to end users. :-)  
 
 # Usage
