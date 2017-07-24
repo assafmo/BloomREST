@@ -6,6 +6,9 @@ This probably should not be exposed to end users. :-)
 git clone https://github.com/assafmo/BloomREST.git
 cd BloomREST
 
+pip install pybloomfiltermmap
+# or: apt install python-pybloomfiltermmap
+
 cat values
 # => 
 # google.com
@@ -22,13 +25,13 @@ cat values | ./ingest.py $bloomFile $maxItems $falsePositiveRate
 port=4096
 ./serve.py $bloomFile $port 2> /dev/null &
 
-curl http://localhost:4096/check -d '["banana","papaya","google.com","batman!"]'
+curl http://localhost:4096/check -X POST -d '["banana","papaya","google.com","batman!"]'
 # =>
 # [true,true,true,false]
 
-curl http://localhost:4096/add -d '["batman!"]'
+curl http://localhost:4096/add -X POST -d '["batman!"]'
 
-curl http://localhost:4096/check -d '["banana","papaya","google.com","batman!"]'
+curl http://localhost:4096/check -X POST -d '["banana","papaya","google.com","batman!"]'
 # =>
 # [true,true,true,true]
 ```
