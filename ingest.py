@@ -10,7 +10,7 @@ if os.path.isfile(bloomFilePath):
     bf = BloomFilter.open(bloomFilePath)
 else:
     maxItems = int(sys.argv[2])
-    errorRate = int(sys.argv[3])
+    errorRate = float(sys.argv[3])
     bf = BloomFilter(maxItems, errorRate, bloomFilePath)
 
 valuesBuffer = []
