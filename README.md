@@ -1,4 +1,5 @@
-Bloom Filters over HTTP for remote access.
+Bloom Filters over HTTP for remote access.  
+This probably should not be exposed to end users. :-)  
 
 # Usage
 ```bash
@@ -31,3 +32,6 @@ curl http://localhost:4096/check -d '["banana","papaya","google.com","batman!"]'
 # =>
 # [true,true,true,true]
 ```
+
+# License
+[MIT](/LICENSE.md)
