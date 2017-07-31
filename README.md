@@ -39,7 +39,7 @@ curl http://localhost:4096/check -X POST -d '["banana","papaya","google.com","ba
 [https://hub.docker.com/r/assafmo/bloomrest-ingest](https://hub.docker.com/r/assafmo/bloomrest-ingest)  
 [https://hub.docker.com/r/assafmo/bloomrest-serve](https://hub.docker.com/r/assafmo/bloomrest-serve)
 
-```
+```bash
 # Create a bloom filter with one value "test1" on your local filesystem ./my.bloom
 echo test1 | docker run -i -v $PWD:/data/ assafmo/bloomrest-ingest my.bloom 10 0.001
 
