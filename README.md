@@ -55,4 +55,4 @@ curl http://localhost:1111/check -d '["test1","test2"]'
 ```
 
 # License
-[MIT](/LICENSE.md)
+[MIT](/LICENSE)
